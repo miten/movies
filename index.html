@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movies list</title>
+    <!--    begin meta-->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--    end meta-->
+    <!--css file links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div id="dots"></div>
+        <div class="slider">
+            <i class="fa fa-angle-left fa-3x" onclick="prev()"></i>
+                <div class="movie">
+                    <img id="poster" src="" alt="poster">
+                    <div class="head">
+                        <h3 class="title"></h3> <div id="stars"></div>
+                    </div>
+                    <p class="synopsis"></p>
+                </div>
+            <i class="fa fa-angle-right fa-3x" onclick="next()"></i>
+        </div>
+    </div>
+    <!--javascript file links -->
+    <script src="js/app.js"></script>
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

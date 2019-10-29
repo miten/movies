@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i');
+* {
+/*       border: 1px dashed black; */
+}
+
+html {
+    overflow: hidden;
+}
+
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto Mono', 'Roboto', Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-center;
+    align-items: center;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 20px;
+    background-color: grey;
+    margin: 3px;
+}
+
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.head {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.head > * {
+    margin: 5px;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+
+#stars > * {
+    margin: 3px;
+}
+
+.synopsis {
+    padding: 15px;
+    font-size: 0.7em;
+}
+
+.arrows {
+    height: 20px;
+}
+
+#poster {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+
+.selected {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+
+}
+
+
+.checked {
+  color: yellow;
+}
+
+
+
+@media (min-width:1025px) {
+    .container {
+        margin: 10px;
+        max-width: 50vw;
+        margin: 0 auto;
+    }
+}
+
+
+@media all and (max-width: 500px) {
+  .head {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+
+  #poster {
+    width: 60%;
+  }
+}
